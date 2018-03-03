@@ -39,8 +39,8 @@
 								</div>
 							</div>
 						</div>
-					
-					
+
+
 						<div class="card">
 							<div class="card-main">
 								<div class="card-inner margin-bottom-no">
@@ -50,13 +50,13 @@
 										<div class="table-responsive">
 											<table class="table">
 												<tr>
-													
+
 													<th>IP</th>
 													<th>归属地</th>
 												</tr>
 												{foreach $userloginip as $single=>$location}
 													<tr>
-														
+
 														<td>{$single}</td>
 														<td>{$location}</td>
 													</tr>
@@ -65,11 +65,11 @@
 										</div>
 									</div>
 								</div>
-								
+
 							</div>
 						</div>
-					
-					
+
+
 
 						<div class="card margin-bottom-no">
 							<div class="card-main">
@@ -108,19 +108,19 @@
 											</div>
 										</div>
 									</div>
-									
+
 								</div>
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
 			</section>
 		</div>
 	</main>
-	
-	
-	
+
+
+
 
 
 
@@ -129,4 +129,3 @@
 
 
 {include file='user/footer.tpl'}
-

@@ -219,6 +219,9 @@
 				
 			})
 		});
+
+
+      
 		
 		$("#readytopay").on('shown.bs.modal', function () {
 			$.ajax({
@@ -247,7 +250,23 @@
 			})
 		});
 
-		
+        $("#alipay").click(function () {
+            $.ajax({
+                type: "GET",
+                url: "code/pay91",
+                dataType: "json",
+                data: {
+                    time: timestamp
+                },
+                success: function (data) {
+                    if (data.ret) {
+                        $("#readytopay").modal();
+                    }
+                }
+
+            })
+        });
+
 	timestamp = {time()}; 
 		
 		
